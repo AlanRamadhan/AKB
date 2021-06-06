@@ -11,15 +11,11 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.a10118427_catatanharian.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.a10118427_catatanharian.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_catatan"
+        android:name="com.example.a10118427_catatanharian.ui.catatan.CatatanFragment"
+        android:label="@string/title_catatan"
         tools:layout="@layout/fragment_catatan" />
 </navigation>
