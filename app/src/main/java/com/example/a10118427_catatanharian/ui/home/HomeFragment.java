@@ -31,7 +31,7 @@ public class HomeFragment extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_profile,  R.id.navigation_informasi)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_home_fragment);
         NavigationUI.setupWithNavController(navView, navController);
 
 

@@ -38,6 +38,10 @@ public class CatatanHarianAdapter extends RecyclerView.Adapter<CatatanHarianAdap
         return catatanList.size();
     }
 
+    public interface CatatanHarianOnclickListener {
+    }
+
+
     public class CatatanHarianViewHolder extends RecyclerView.ViewHolder{
 
         private TextView tv_judul;
