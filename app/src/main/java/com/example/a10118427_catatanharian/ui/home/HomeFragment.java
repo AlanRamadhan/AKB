@@ -18,11 +18,24 @@ import com.example.a10118427_catatanharian.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends AppCompatActivity {
 
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_home);
+        BottomNavigationView navView = findViewById(R.id.nav_tab);
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_profile,  R.id.navigation_informasi)
+                .build();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavigationUI.setupWithNavController(navView, navController);
+
+
+
     }
 
     }
