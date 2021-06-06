@@ -1,16 +1,21 @@
 package com.example.a10118427_catatanharian;
 
+import android.graphics.SurfaceTexture;
 import android.os.Bundle;
 
+import com.example.a10118427_catatanharian.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity   {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 R.id.navigation_home,  R.id.navigation_catatan)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-
         NavigationUI.setupWithNavController(navView, navController);
+
+
+
     }
 
 }

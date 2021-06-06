@@ -2,4 +2,6 @@
     <string name="app_name">10118427_CatatanHarian</string>
     <string name="title_home">Home</string>
     <string name="title_catatan">Catatan</string>
+    <string name="title_informasi">Informasi</string>
+    <string name="title_profile">Profile</string>
 </resources>

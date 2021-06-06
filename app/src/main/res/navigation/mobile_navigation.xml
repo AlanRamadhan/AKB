@@ -18,4 +18,12 @@
         android:name="com.example.a10118427_catatanharian.ui.catatan.CatatanFragment"
         android:label="@string/title_catatan"
         tools:layout="@layout/fragment_catatan" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_informasi"
+        android:name="com.example.a10118427_catatanharian.InformasiFragment"
+        android:label="@string/title_informasi"
+        tools:layout="@layout/fragment_informasi" />
 </navigation>
