@@ -18,6 +18,9 @@ public class CatatanHarianAdapter extends RecyclerView.Adapter<CatatanHarianAdap
         this.catatanList = catatanList;
     }
 
+    protected void onClick(int posision){}
+
+
     @NonNull
     @Override
     public CatatanHarianViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,8 +41,8 @@ public class CatatanHarianAdapter extends RecyclerView.Adapter<CatatanHarianAdap
         return catatanList.size();
     }
 
-    public interface CatatanHarianOnclickListener {
-    }
+
+
 
 
     public class CatatanHarianViewHolder extends RecyclerView.ViewHolder{

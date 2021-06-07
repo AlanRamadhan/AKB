@@ -8,7 +8,7 @@
     android:background="?attr/selectableItemBackground"
     android:paddingBottom="5dp">
 
-    <TextView
+    <EditText
         android:id="@+id/tv_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,10 +18,9 @@
         android:padding="5dp"
         android:text="Judul"
         android:textSize="15dp"
-        android:textStyle="bold"
-        android:typeface="serif"
+
         />
-    <TextView
+    <EditText
         android:id="@+id/tv_kategori"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,10 +31,9 @@
         android:padding="5dp"
         android:text="Kategori"
         android:textSize="15dp"
-        android:textStyle="bold"
         android:typeface="serif"
         />
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/tv_isi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +43,18 @@
         android:text="Isi"
         android:textSize="13sp"
         android:typeface="serif"
+
         />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpan"
+        android:text="Simpan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </com.google.android.material.button.MaterialButton>
 
 </LinearLayout>
